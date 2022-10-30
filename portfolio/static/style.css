@@ -51,7 +51,7 @@ h4 {
 
 #legend {
     position: absolute;
-    top: 41em;
+    top: 40em;
     left: 90em;
     z-index: 1000;
     background-color: #ECECEC;
@@ -76,7 +76,7 @@ h4 {
     background-color: #FFECE6;
     padding: 0.5em;
     width: 60em;
-    height: 9em;
+    height: 8em;
 }
 
 #final_res {
@@ -84,7 +84,7 @@ h4 {
     height: 24em;
     padding: 0.5em;
     position: absolute;
-    top: 41em;
+    top: 40em;
     left: 50em;
     background-color: #FFDBD0;
 }
@@ -164,7 +164,7 @@ h4 {
 
 #cov_table{
     width: 60em;
-    height: 20em;
+    height: 17em;
     position: relative;
     background-color: rgba(46, 46, 46, 0.048);
     text-align: center;
@@ -172,7 +172,7 @@ h4 {
 
 #price_table{
     width: 60em;
-    height: 7em;
+    height: 5em;
     position: relative;
     background-color: rgba(46, 46, 46, 0.048);
     text-align: center;
