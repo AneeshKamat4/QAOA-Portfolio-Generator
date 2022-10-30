@@ -173,7 +173,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [issues-url]: https://github.com/Ashish0z/portfolio_generator_QuantYantriki/issues
 [license-shield]: https://img.shields.io/github/license/Ashish0z/portfolio_generator_QuantYantriki.svg?style=for-the-badge
 [license-url]: https://github.com/Ashish0z/portfolio_generator_QuantYantriki/blob/master/LICENSE.txt
-[product-screenshot]: Examples/example.gif
+[product-screenshot]: Examples/example_gif.gif
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 [dwavesys.com]:https://shields.io/badge/-DWave%20Systems-008CD7?style=for-the-badge&logo=dwavesystems
