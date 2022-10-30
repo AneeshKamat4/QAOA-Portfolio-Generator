@@ -1,0 +1,238 @@
+body {
+    background-color: #ECF8F8;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #B2967D;
+    z-index: 10000;
+}
+#Selection1 {
+    width: 43em;
+    height: 20em;
+    padding: 0.5em;
+    position: absolute;
+    top: 7em;
+    left: 1em;
+    background-color: #C4E7D4;
+    border-left: 3em solid #0FA3B1;
+    opacity: 1;
+}
+h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+#Selection2 {
+    width: 43em;
+    height: 14em;
+    padding: 0.5em;
+    position: absolute;
+    top: 28em;
+    left: 1em;
+    border-left: 3em solid #304D6D;
+    background-color: #C4E7D4;
+    opacity: 0.1;
+    
+}
+#Selection3 {
+    width: 43em;
+    height: 22em;
+    padding: 0.5em;
+    position: absolute;
+    top: 43em;
+    left: 1em;
+    background-color: #C4E7D4;
+    border-left: 3em solid #304D6D;
+    opacity: 0.1;
+}
+
+#legend {
+    position: absolute;
+    top: 41em;
+    left: 90em;
+    z-index: 1000;
+    background-color: #ECECEC;
+    padding: 0.5em;
+    width: 20em;
+    height: 7em;
+}
+
+#cov_table_h {
+    position: absolute;
+    top: 7em;
+    left: 50em;
+    background-color: #FFECE6;
+    padding: 0.5em;
+    width: 60em;
+    height: 23em;
+}
+#curr_price_h {
+    position: absolute;
+    top: 31em;
+    left: 50em;
+    background-color: #FFECE6;
+    padding: 0.5em;
+    width: 60em;
+    height: 9em;
+}
+
+#final_res {
+    width: 60em;
+    height: 24em;
+    padding: 0.5em;
+    position: absolute;
+    top: 41em;
+    left: 50em;
+    background-color: #FFDBD0;
+}
+#Selection1 table {
+    position: relative;
+    left: 3em;
+}
+.n_slec {
+    width: 8em;
+    height: 3em;
+    border: 0px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    background-color: #d1d0d0;
+}
+.slec {
+    width: 8em;
+    height: 3em;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #4CAF50;
+}
+.n_slec:hover {
+    background-color: #5fb162;
+}
+.slec:hover {
+    background-color: #9b9e9b;;
+}
+#post {
+    width: 10em;
+    height: 4em;
+    top: 20.5em;
+    left: 42em;
+    position: absolute;
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+#Selection2 > * {
+    position: relative;
+
+} 
+#rand_bias_h {
+    position : relative;
+    height : 3em;
+    width : 40em;
+}
+#user_bias_h {
+    position : relative;
+    height : 3em;
+    width : 40em;
+}
+.display_stock {
+    position : relative;
+    height : 3em;
+    width : 40em;
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    background-color: #fff0f0;
+}
+
+.display_stock td{
+    margin: 0;
+    border-right: 0.1em solid black;
+    border-left: 0.1em solid black;
+    text-align: center;
+}
+
+.display_stock input {
+    width: 3em;
+}
+
+.biased {
+    background-color: rgb(247, 247, 113);
+    border: 0;
+    margin: 0;
+}
+
+#cov_table{
+    width: 60em;
+    height: 20em;
+    position: relative;
+    background-color: rgba(46, 46, 46, 0.048);
+    text-align: center;
+}
+
+#price_table{
+    width: 60em;
+    height: 7em;
+    position: relative;
+    background-color: rgba(46, 46, 46, 0.048);
+    text-align: center;
+}
+
+#cov_table td {
+    width: 2em;
+    height: 1em;
+    background-color: #ffffff;
+
+}
+#curr_pdata {
+    width: 60em;
+    height: 7em;
+    position: relative;
+    background-color: rgba(156, 156, 156, 0.048);
+}
+
+#price_table td {
+    background-color: #ffffff;
+}
+.calc {
+    width: 10em;
+    height: 4em;
+    border: 0;
+    position: relative;
+    background-color: #c4c4c4;
+}
+.calc:hover {
+    background-color: #fcfcfc;
+}
+
+#QA{
+    left: 10em;
+}
+#Gate{
+    left: 16em;
+}
+
+#bias_selec {
+    position: relative;
+    top: 0.5em;
+}
+
+#res_table {
+    width: 38em;
+    height: 5em;
+    position: relative;
+    background-color: rgba(46, 46, 46, 0.048);
+    text-align: center;
+}
+
+#res_table .biased {
+    background-color: #e5ff51;
+}
+
+#res_table .exc {
+    background-color: #ff5151;
+}
+
+#res_table .inc {
+    background-color: #51ff51;
+}

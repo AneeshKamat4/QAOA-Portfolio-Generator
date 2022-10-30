@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QEITC_Stocks</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <div id = "header">
+        <h1>Mininmum Risk Porfolio Generator</h1>
+        <h4>By - QuantYantriki</h4>
+    </div>
+    <div id = 'Selection1'>
+        <h4>Select Stocks</h4>
+        <table>
+            <tr>
+                <td><button id = "AGN", class = "n_slec">AGN</button></td>
+                <td><button id = "AMT", class = "n_slec">AMT</button></td>
+                <td><button id = "AON", class = "n_slec">AON</button></td>
+                <td><button id = "APD", class = "n_slec">APD</button></td>
+                <td><button id = "ATVI", class = "n_slec">ATVI</button></td>
+            </tr> 
+            <tr> 
+                <td><button id = "AWK", class = "n_slec">AWK</button></td>
+                <td><button id = "BAC", class = "n_slec">BAC</button></td>
+                <td><button id = "BBT", class = "n_slec">BBT</button></td>
+                <td><button id = "BDX", class = "n_slec">BDX</button></td>
+                <td><button id = "CBG", class = "n_slec">CBG</button></td>
+            </tr> 
+            <tr> 
+                <td><button id = "CINF", class = "n_slec">CINF</button></td>
+                <td><button id = "COTY", class = "n_slec">COTY</button></td>
+                <td><button id = "CVS", class = "n_slec">CVS</button></td>
+                <td><button id = "DRI", class = "n_slec">DRI</button></td>
+                <td><button id = "DUK", class = "n_slec">DUK</button></td>
+            </tr> 
+            <tr> 
+                <td><button id = "EMN", class = "n_slec">EMN</button></td>
+                <td><button id = "ESRX", class = "n_slec">ESRX</button></td>
+                <td><button id = "FTV", class = "n_slec">FTV</button></td>
+                <td><button id = "GGP", class = "n_slec">GGP</button></td>
+                <td><button id = "HAL", class = "n_slec">HAL</button></td>
+            </tr> 
+            <tr> 
+                <td><button id = "ISRG", class = "n_slec">ISRG</button></td>
+                <td><button id = "JWN", class = "n_slec">JWN</button></td>
+                <td><button id = "MAT", class = "n_slec">MAT</button></td>
+                <td><button id = "PVH", class = "n_slec">PVH</button></td>
+                <td><button id = "ZTS", class = "n_slec">ZTS</button></td>
+            </tr>
+        </table>
+
+        <h4>Select Historical Price data Range</h4> 
+        <label>From:</label><input type="date", id = "dt1" max="2018-01-31" min="2013-03-01">
+        <label>To:</label><input type="date", id = "dt2" max="2018-01-31" min="2013-03-01">
+        <button id = "post">Make Selection</button>
+    </div>
+    <div id = "Selection2">
+        <label>Enter future date for Projection:</label><input type="date" id = "d3">
+        <h4>Select Model 2 Prediction</h4>
+        <div id = "bias_selec" style = "visibility: visible">
+            <input type="radio" name = "bias_opt" id = "rV" checked><label>Use automatic prediction</label>
+            <div id = "rand_bias_h"></div>
+            <input type="radio" name = "bias_opt" id = "uV"><label>Provide manual prediction</label>
+            <div id = "user_bias_h"></div>   
+        </div>
+    </div>
+    <div id = "legend">
+        <h4>Legend </h4> 
+        <ul>
+        <li> 1 : Must Include </li>
+        <li> 0 : Must Exclude </li>
+        <li> * : No Preference </li>
+        </ul>
+    </div>
+    <div id = "Selection3">
+        <h4>Choose Model Confidence </h4>
+        <input type="range" min="0" max="100" value="70" class="slider" id="pConvergence">
+        <label id = "P_val" style ="margin-left: 1em">
+            <script>
+                var slider = document.getElementById("pConvergence");
+                var output = document.getElementById("P_val");
+                output.innerHTML = slider.value/100; // Display the default slider value
+                // Update the current slider value (each time you drag the slider handle)
+                slider.oninput = function() {
+                    output.innerHTML = this.value/100;
+                }
+            </script>
+        </label>
+        <h4>Enter Budget </h4>
+        <input type="text", id = "budget"><label>(should be greater than twice the maximum stock price)</label>
+        <br><br>
+        <h4>Select subroutine for calculation</h4>   
+        <button id = "QA" class = "calc">Quantum Annealing (DWave)</button>
+        <button id = "Gate" class = "calc">Gate Model <br>(IBM QISKIT)</button>
+    </div>
+    <div id = "cov_table_h">
+        <h3>Model 1</h3> 
+        <h4>Covariance Matrix</h4>
+        <div id = "cov_table"></div>
+    </div>
+    <div id = "curr_price_h">
+        <h4>Price Data </h4>
+        <div id = "curr_pdata"></div>
+    </div>
+    <div id = "final_res">
+        <h4>Recommended minimum risk allocation</h4>
+    </div>
+    <script>
+        csrf_token = '{{ csrf_token }}';
+    </script>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
