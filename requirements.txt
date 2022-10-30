@@ -1,0 +1,17 @@
+Django==4.1.2
+dwave-cloud-client==0.10.2
+dwave-greedy==0.2.5
+dwave-hybrid==0.6.9
+dwave-inspector==0.3.0
+dwave-neal==0.5.9
+dwave-networkx==0.8.12
+dwave-ocean-sdk==5.5.0
+dwave-preprocessing==0.4.0
+dwave-system==1.15.0
+dwave-tabu==0.4.5
+dwavebinarycsp==0.2.0
+numpy==1.23.4
+qiskit==0.39.0
+qiskit-aer==0.11.0
+qiskit-ibmq-provider==0.19.2
+qiskit-terra==0.22.04.16
