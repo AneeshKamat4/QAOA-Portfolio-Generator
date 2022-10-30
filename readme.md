@@ -81,7 +81,7 @@ We propose a novel feedback assisted quantum annealing algorithm for hedging whe
 
 The algorithm starts by using quantum annealing to find a probability distribution over optimal asset allocation vectors based only on the covariance matrix. A subset of the elements of the asset allocation vector is then randomly sampled and compared with the optimal portfolio at a future time - the latter obtained via alternate means described above. If the marginal probability of the sampled subset of assets lies above a user-defined threshold we accept the entire asset allocation vector as the optimal prediction for that time. In the other case, we repeat quantum annealing with the same covariance matrix as before but now with biasing (using local-fields on the annealer) on the sampled variables to set them to desired values. This process can be shown to converge in linear time which is when the algorithm stops and provides us with an optimal asset allocation vector at a fixed future time.
 
-This project contains the program that implement the above approach using the Dwave Ocean SDK and IBM Qiskit along with a django based UI that allows you to select the inputs and call either of the subroutines to calculate the optimal porfolio. 
+This project contains the program that implements the above approach using the Dwave Ocean SDK and IBM Qiskit along with a Django based UI that allows you to select the inputs and call either of the subroutines to calculate the optimal porfolio. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
