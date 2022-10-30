@@ -144,6 +144,7 @@ This project contains the program that implement the above approach using the Dw
 ## Contributors
 
 This project was made by Team QuantYantriki for Quantum Science and Technology Hackathon 2022 
+<br />
 Team Member Details:
 * Siddartha Santra
 * Ashish Patel
